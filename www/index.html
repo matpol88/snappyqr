@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-        <title></title>
-        <link href="lib/ionic/css/ionic.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-        <script src="lib/ionic/js/ionic.bundle.js"></script>
-        <script src="js/ng-cordova.min.js"></script>
-        <script src="cordova.js"></script>
-        <script src="js/app.js"></script>
-    </head>
-    <body ng-app="starter">
-  <body ng-app="starter">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Snappy QR</title>
 
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet"> 
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <link href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+    <script src="js/ng-cordova.min.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/app.js"> </script>
+
+  </head>
+  <body ng-app="starter">
+    
     <ion-pane>
       <ion-header-bar class="bar-stable">
-        <h1 class="title">Ionic Blank Starter</h1>
+       <h1 class="title"> Snappy RSVP </h1> 
       </ion-header-bar>
-      <ion-content ng-controller="ExampleController"> <button class="button" ng-click="ScanBarcode()">Scan</button>
-      </ion-content>
-    </ion-pane>
+      <ion-content ng-controller="ExampleController"> 
+        <div style="height: 100px;" class="spacer"></div>
+          <center><button class="button" ng-click="scanBarcode()">Scan</button>  </center>
+      </ion-content> 
+
+    </ion-pane>    
   </body>
 </html>
 
+
+        
