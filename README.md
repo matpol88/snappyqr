@@ -1,0 +1,2 @@
+# snappyqr
+Version .03
