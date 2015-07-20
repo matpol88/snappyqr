@@ -22,7 +22,7 @@ exampleApp.controller("ExampleController", function($scope, $cordovaBarcodeScann
  
     $scope.scanBarcode = function() {
         $cordovaBarcodeScanner.scan().then(function(imageData) {
-            window.open('' + imageData.text +'', '_system', 'location=yes');
+            window.open('' + imageData.text +'', '_blank', 'location=yes');
            console.log("Barcode Format -> " + imageData.format);
             console.log("Cancelled -> " + imageData.cancelled);
         }, function(error) {
